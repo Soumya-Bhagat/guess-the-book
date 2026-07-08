@@ -1,0 +1,55 @@
+.selected-book {
+  width: 160px;
+  height: 240px;
+
+  object-fit: cover;
+
+  margin: 30px auto;
+
+  display: block;
+
+  border: 5px solid #f3df53;
+}
+.book-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 140px);
+
+  gap: 24px;
+
+  justify-content: center;
+
+  margin-top: 40px;
+}
+
+.book-cover {
+  width: 140px;
+  height: 210px;
+
+  object-fit: cover;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.book-cover:hover {
+  transform: scale(1.05);
+}
+
+.book-cover.selected {
+  border: 5px solid #f3df53;
+}
+
+.book-selection-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-selection-screen h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1%;
+}

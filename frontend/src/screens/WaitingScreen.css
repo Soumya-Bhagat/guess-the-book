@@ -1,0 +1,28 @@
+.waiting-screen {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.waiting-avatar {
+  width: 180px;
+  height: 180px;
+
+  border-radius: 50%;
+  border: 10px solid #f1dd4b;
+
+  margin-bottom: 30px;
+}
+
+.waiting-text {
+  font-size: 4rem;
+  font-weight: 800;
+
+  color: #760000;
+
+  text-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}

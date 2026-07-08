@@ -1,0 +1,170 @@
+.title-banner {
+  width: 65%;
+  max-width: 1100px;
+
+  background: #85630d;
+
+  border-radius: 40px;
+
+  padding: 7px 20px;
+
+  text-align: center;
+
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 1%;
+}
+
+.home-screen {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 10px;
+
+  padding-top: 30px;
+  position: relative;
+}
+
+.clipboard-content{
+  position: absolute;
+
+  bottom: 11.5%;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 65%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 13px;
+
+}
+
+.clipboard-content h2 {
+  color: #014d18;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.username-input {
+  width: 60%;
+
+  border: none;
+  border-radius: 25px;
+
+  background: #d9d9d9;
+
+  padding: 8px 15px;
+
+  font-size: 1rem;
+
+  text-align: center;
+}
+
+.primary-button {
+  background:  #014d18;
+
+  color: #fffdf3;
+
+  border: none;
+
+  padding: 8px 12px;
+
+  font-size: 1.2rem;
+  font-weight: 420;
+
+  cursor: pointer;
+  width: 50%;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+
+.room-code {
+  width: 50%;
+
+  background: #f8edd0;
+
+  border-radius: 16px;
+
+  padding: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2px;
+}
+
+.copy-button {
+  background: #014d18;
+
+  color: #fffdf3;
+
+  border: none;
+
+  padding: 8px 12px;
+
+  font-size: 1rem;
+  font-weight: 550;
+  
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.next-arrow {
+  position: absolute;
+
+  right: 10%;
+  top: 40%;
+
+  width: 120px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.next-arrow-left {
+  position: absolute;
+
+  left: 10%;
+  top: 40%;
+
+  width: 120px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+  transform: rotate(180deg);
+}
+
+.next-arrow.active:hover {
+  transform: scale(1.05);
+}
+
+.next-arrow.active:hover {
+  transform: scale(1.05);
+}
+
+.next-arrow.disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.clipboard-container {
+  position: relative;
+}
+
+.clipboard-image {
+  width: 480px;
+  display: block;
+}

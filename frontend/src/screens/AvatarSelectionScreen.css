@@ -1,0 +1,42 @@
+.selected-avatar {
+  width: 160px;
+  height: 160px;
+
+  border-radius: 50%;
+
+  border: 5px solid #f3df53;
+  margin-top: -1.5%;
+}
+.avatar-grid {
+    align-items: center;
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+  /* margin-top: -2%; */
+}
+
+.avatar-option {
+  width: 110px;
+  height: 110px;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.avatar-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+.avatar-screen h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1%;
+}

@@ -1,0 +1,75 @@
+.result-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.35);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+.result-modal {
+  width: 720px;
+  height: 520px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: relative;
+}
+
+.result-title {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  color: #0b8d1b;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.result-avatar {
+  position: absolute;
+
+  width: 170px;
+  height: 170px;
+
+  border-radius: 50%;
+
+  top: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.result-buttons {
+  position: absolute;
+
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  gap: 30px;
+}
+
+.result-btn {
+  width: 220px;
+  height: 65px;
+
+  border: none;
+  border-radius: 35px;
+
+  background: #efd84d;
+
+  color: #6d0000;
+
+  font-size: 2rem;
+  font-weight: 700;
+
+  cursor: pointer;
+}
