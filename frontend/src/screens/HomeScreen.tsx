@@ -2,6 +2,7 @@ import "./HomeScreen.css";
 import arrowImage from "../assets/image 19.png"
 import clipboardImage from "../assets/image 22.png"
 import { useState } from "react";
+import { bgMusic } from "../utils/music";
 interface HomeScreenProps {
   roomId: string;
   playerRole: "A" | "B" | null;
@@ -43,7 +44,10 @@ export default function HomeScreen({
         onChange={(e) => setUserName(e.target.value)}
     />
 
-    <button className="primary-button" onClick={onCreateRoom}>
+    <button className="primary-button" onClick={() => {
+        bgMusic.play();
+        onCreateRoom();
+    }}>
         Create Room
     </button>
 
@@ -60,7 +64,10 @@ export default function HomeScreen({
 
     <h2>OR</h2>
 
-    <button className="primary-button" onClick={onJoinRoom}>
+    <button className="primary-button" onClick={() => {
+        bgMusic.play();
+        onJoinRoom();
+    }}>
         Join Room
     </button>
     </div>

@@ -4,6 +4,7 @@ import "./HomeScreen.css";
 import "./BookSelectionScreen.css";
 import "./GameScreen.css";
 import { avatars } from "../data/avatars";
+import { playClick, playDiscard } from "../utils/sounds";
 
 interface GameScreenProps {
   playerRole: "A" | "B" | null;
@@ -119,6 +120,7 @@ const [question, setQuestion] = useState("");
             <button
             className="ask-button"
             onClick={() => {
+                playClick();
                 onAskQuestion(question);
                 setQuestion("");
             }}
@@ -139,7 +141,10 @@ const [question, setQuestion] = useState("");
             playerRole === currentTurn && (
                 <button
                 className="done-button"
-                onClick={onCompleteTurn}
+                onClick={() => {
+                  playClick();
+                  onCompleteTurn();
+                }}
                 >
                 Done
                 </button>
@@ -182,18 +187,20 @@ const [question, setQuestion] = useState("");
       <>
         <button
           className="answer-button yes"
-          onClick={() =>
-            onAnswerQuestion("Yes")
-          }
+          onClick={() => {
+            playClick();
+            onAnswerQuestion("Yes");
+          }}
         >
           Yes
         </button>
 
         <button
           className="answer-button no"
-          onClick={() =>
-            onAnswerQuestion("No")
-          }
+          onClick={() => {
+            playClick();
+            onAnswerQuestion("No");
+          }}
         >
           No
         </button>
@@ -214,6 +221,7 @@ const [question, setQuestion] = useState("");
           playerRole === currentTurn &&
           currentAnswer
         ) {
+          playDiscard();
           toggleBook(book.id);
         }
       }}
